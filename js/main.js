@@ -5,6 +5,8 @@
 
 import { NavigationModule } from './modules/navigation.js';
 import { HeroModule } from './modules/hero.js';
+import { AboutModule } from './modules/about.js';
+import { BusinessModule } from './modules/business.js';
 
 class ZexterSite {
     constructor() {
@@ -66,6 +68,12 @@ class ZexterSite {
             
             // Initialize hero section
             this.modules.hero = new HeroModule();
+            
+            // Initialize about section
+            this.modules.about = new AboutModule();
+            
+            // Initialize business section
+            this.modules.business = new BusinessModule();
             
             console.log('📦 Modules initialized successfully');
         } catch (error) {
