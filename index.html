@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社ZEXTER - 害鳥・害虫・害獣駆除、電気工事、清掃、買取販売、広告を通じて、お客様の生活と事業をサポートする信頼のパートナー">
+    <meta name="keywords" content="ZEXTER,害鳥駆除,害虫駆除,害獣駆除,電気工事,清掃,買取販売,広告">
+    <title>株式会社ZEXTER | 総合生活サポート企業</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/design-system.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#hero" class="logo" aria-label="株式会社ZEXTER ホーム">
+                <div class="logo-icon" aria-hidden="true">Z</div>
+                <span class="logo-text">ZEXTER</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav" role="navigation" aria-label="メインナビゲーション">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#business" class="nav-link">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#strength" class="nav-link">Strength</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company" class="nav-link">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- CTA Button -->
+            <a href="#contact" class="btn btn-primary desktop:block mobile:hidden">お問い合わせ</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button 
+                class="mobile-menu-toggle" 
+                aria-label="メニューを開く"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="モバイルメニュー">
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="#about" class="mobile-menu-link">About</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#business" class="mobile-menu-link">Business</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#strength" class="mobile-menu-link">Strength</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#company" class="mobile-menu-link">Company</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#contact" class="mobile-menu-link">Contact</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#contact" class="btn btn-primary btn-lg">お問い合わせ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" role="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="hero">
+            <!-- Background Effects -->
+            <div class="hero-floating hero-floating-1" aria-hidden="true"></div>
+            <div class="hero-floating hero-floating-2" aria-hidden="true"></div>
+            <div class="hero-floating hero-floating-3" aria-hidden="true"></div>
+            
+            <!-- 3D Canvas Container -->
+            <div id="hero-canvas-container" class="hero-canvas" aria-hidden="true"></div>
+            
+            <!-- Main Content -->
+            <div class="section-content">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <!-- Badge -->
+                        <div class="hero-badge">
+                            <span class="badge badge-gaming animate-pulse">Next Generation Solutions</span>
+                        </div>
+                        
+                        <!-- Main Title -->
+                        <h1 class="hero-title" data-splitting="chars">
+                            総合生活サポート<br>
+                            <span class="text-gradient-gold">ZEXTER</span>
+                        </h1>
+                        
+                        <!-- Subtitle -->
+                        <p class="hero-subtitle" data-splitting="lines">
+                            害鳥・害虫・害獣駆除から電気工事、清掃、買取販売、広告まで。<br>
+                            最新技術と確かな経験で、お客様の生活と事業を総合的にサポートします。
+                        </p>
+                        
+                        <!-- CTA Buttons -->
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary btn-xl">
+                                <span>無料相談はこちら</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M13 7l5 5-5 5M6 7l5 5-5 5"/>
+                                </svg>
+                            </a>
+                            <a href="#about" class="btn btn-secondary btn-xl">
+                                <span>会社について</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Stats -->
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <div class="hero-stat-number text-gradient-gold" data-count="10">10</div>
+                                <div class="hero-stat-label">年以上の実績</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-number text-gradient-gold" data-count="1000">1000</div>
+                                <div class="hero-stat-label">件以上の施工実績</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-number text-gradient-gold" data-count="98">98</div>
+                                <div class="hero-stat-label">%のお客様満足度</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Visual -->
+                    <div class="hero-visual">
+                        <!-- Premium Card Effect -->
+                        <div class="hero-card card-luxury animate-float">
+                            <div class="hero-card-content">
+                                <div class="hero-card-icon">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                </div>
+                                <h3 class="hero-card-title">信頼と安心</h3>
+                                <p class="hero-card-text">
+                                    10年以上の豊富な実績と<br>
+                                    98%のお客様満足度
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Gaming Card Effect -->
+                        <div class="hero-card card-gaming animate-glow">
+                            <div class="hero-card-content">
+                                <div class="hero-card-icon">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="hero-card-title">最新技術</h3>
+                                <p class="hero-card-text">
+                                    次世代の技術と<br>
+                                    革新的なソリューション
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Elements -->
+                        <div class="hero-tech-elements" aria-hidden="true">
+                            <div class="tech-circle tech-circle-1 animate-spin"></div>
+                            <div class="tech-circle tech-circle-2 animate-spinSlow"></div>
+                            <div class="tech-line tech-line-1"></div>
+                            <div class="tech-line tech-line-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <div class="scroll-indicator-line"></div>
+                <div class="scroll-indicator-dot animate-pulse"></div>
+                <span class="scroll-indicator-text">Scroll</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <!-- About content will be implemented -->
+        </section>
+
+        <!-- Business Section -->
+        <section class="business" id="business">
+            <!-- Business content will be implemented -->
+        </section>
+
+        <!-- Strength Section -->
+        <section class="strength" id="strength">
+            <!-- Strength content will be implemented -->
+        </section>
+
+        <!-- Company Section -->
+        <section class="company" id="company">
+            <!-- Company content will be implemented -->
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <!-- Contact content will be implemented -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <!-- Footer content will be implemented -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
+    <script src="https://unpkg.com/three@0.155.0/build/three.min.js"></script>
+    
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
