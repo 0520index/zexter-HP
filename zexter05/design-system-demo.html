@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社zexter - デザインシステム確認</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-logo">ZEXTER</a>
+            <ul class="navbar-nav">
+                <li class="navbar-nav-item">
+                    <a href="#colors" class="navbar-nav-link active">カラー</a>
+                </li>
+                <li class="navbar-nav-item">
+                    <a href="#typography" class="navbar-nav-link">タイポグラフィ</a>
+                </li>
+                <li class="navbar-nav-item">
+                    <a href="#buttons" class="navbar-nav-link">ボタン</a>
+                </li>
+                <li class="navbar-nav-item">
+                    <a href="#cards" class="navbar-nav-link">カード</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main style="padding-top: 80px;">
+        <!-- ヘッダーセクション -->
+        <section class="section bg-white">
+            <div class="container text-center">
+                <h1 class="text-5xl font-black text-gray-800 mb-6">
+                    株式会社zexter<br>
+                    <span class="text-gold">デザインシステム</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    白と金をベースとした洗練されたデザインシステムです
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#colors" class="btn btn-primary btn-lg">
+                        <i class="fas fa-palette"></i>
+                        システムを確認
+                    </a>
+                    <a href="#" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-download"></i>
+                        ガイドライン
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- カラーパレット -->
+        <section id="colors" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">カラーパレット</h2>
+                    <p class="section-subtitle">白と金をメインにした上品なカラーシステム</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <!-- ゴールド系 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">ゴールド系</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2" style="background: #FFF8DC;"></div>
+                                    <p class="text-sm font-medium">ライト</p>
+                                    <code class="text-xs text-gray-500">#FFF8DC</code>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2" style="background: #FFEAA7;"></div>
+                                    <p class="text-sm font-medium">ソフト</p>
+                                    <code class="text-xs text-gray-500">#FFEAA7</code>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2" style="background: #FFD700;"></div>
+                                    <p class="text-sm font-medium">メイン</p>
+                                    <code class="text-xs text-gray-500">#FFD700</code>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2" style="background: #E6C200;"></div>
+                                    <p class="text-sm font-medium">ダーク</p>
+                                    <code class="text-xs text-gray-500">#E6C200</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- グレー系 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">グレー・ホワイト系</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2 border" style="background: #FFFFFF;"></div>
+                                    <p class="text-sm font-medium">ホワイト</p>
+                                    <code class="text-xs text-gray-500">#FFFFFF</code>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2" style="background: #FAFAFA;"></div>
+                                    <p class="text-sm font-medium">ライト</p>
+                                    <code class="text-xs text-gray-500">#FAFAFA</code>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2" style="background: #6B7280;"></div>
+                                    <p class="text-sm font-medium">ミディアム</p>
+                                    <code class="text-xs text-gray-500">#6B7280</code>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-full h-16 rounded-lg mb-2" style="background: #374151;"></div>
+                                    <p class="text-sm font-medium">ダーク</p>
+                                    <code class="text-xs text-gray-500">#374151</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- タイポグラフィ -->
+        <section id="typography" class="section bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">タイポグラフィ</h2>
+                    <p class="section-subtitle">読みやすさと美しさを両立したフォントシステム</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">見出し</h3>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="mb-4">見出し1 - H1タグ</h1>
+                            <h2 class="mb-4">見出し2 - H2タグ</h2>
+                            <h3 class="mb-4">見出し3 - H3タグ</h3>
+                            <h4 class="mb-4">見出し4 - H4タグ</h4>
+                            <h5 class="mb-4">見出し5 - H5タグ</h5>
+                            <h6 class="mb-0">見出し6 - H6タグ</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">本文・フォントウェイト</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="font-light mb-3">ライト (300) - 軽やかな印象</p>
+                            <p class="font-normal mb-3">ノーマル (400) - 標準の読みやすさ</p>
+                            <p class="font-medium mb-3">ミディアム (500) - 少し強調</p>
+                            <p class="font-semibold mb-3">セミボールド (600) - 見出し向け</p>
+                            <p class="font-bold mb-3">ボールド (700) - しっかりとした強調</p>
+                            <p class="font-black mb-0">ブラック (900) - 最大の強調</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ボタンコンポーネント -->
+        <section id="buttons" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ボタンシステム</h2>
+                    <p class="section-subtitle">様々な用途に対応するボタンバリエーション</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- ボタンタイプ -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">ボタンタイプ</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="flex flex-col gap-4">
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-star"></i>
+                                    プライマリボタン
+                                </button>
+                                <button class="btn btn-secondary">
+                                    <i class="fas fa-heart"></i>
+                                    セカンダリボタン
+                                </button>
+                                <button class="btn btn-outline">
+                                    <i class="fas fa-download"></i>
+                                    アウトラインボタン
+                                </button>
+                                <button class="btn btn-ghost">
+                                    <i class="fas fa-info"></i>
+                                    ゴーストボタン
+                                </button>
+                                <button class="btn btn-gradient">
+                                    <i class="fas fa-rocket"></i>
+                                    グラデーションボタン
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ボタンサイズ -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">ボタンサイズ</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="flex flex-col gap-4 items-center">
+                                <button class="btn btn-primary btn-sm">スモール</button>
+                                <button class="btn btn-primary">レギュラー</button>
+                                <button class="btn btn-primary btn-lg">ラージ</button>
+                                <button class="btn btn-primary btn-xl">エクストララージ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- カードコンポーネント -->
+        <section id="cards" class="section bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">カードシステム</h2>
+                    <p class="section-subtitle">コンテンツを美しく整理するカードデザイン</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- 基本カード -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="text-lg font-bold">基本カード</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-gray-600">シンプルで使いやすい基本的なカードデザインです。</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline btn-sm">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <!-- エレベーテッドカード -->
+                    <div class="card card-elevated">
+                        <div class="card-header">
+                            <h4 class="text-lg font-bold">エレベーテッドカード</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-gray-600">影が強調されたカードで、重要なコンテンツに適しています。</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm">アクション</button>
+                        </div>
+                    </div>
+
+                    <!-- ゴールドカード -->
+                    <div class="card card-gold">
+                        <div class="card-header">
+                            <h4 class="text-lg font-bold">ゴールドカード</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-gray-600">特別なコンテンツやプレミアム要素に使用するカードです。</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-gradient btn-sm">プレミアム</button>
+                        </div>
+                    </div>
+
+                    <!-- サービスカード -->
+                    <div class="service-card col-span-1 md:col-span-2 lg:col-span-3 max-w-md mx-auto">
+                        <div class="service-card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="service-card-title">サービスカード例</h4>
+                        <p class="service-card-description">
+                            事業内容を紹介するための専用カードデザインです。
+                            アイコンとテキストが美しく配置されています。
+                        </p>
+                        <button class="btn btn-outline">詳細を確認</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- フォームコンポーネント -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">フォームコンポーネント</h2>
+                    <p class="section-subtitle">使いやすいフォーム要素</p>
+                </div>
+
+                <div class="max-w-2xl mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">お問い合わせフォーム例</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label class="form-label">お名前</label>
+                                    <input type="text" class="form-control" placeholder="山田太郎">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">メールアドレス</label>
+                                    <input type="email" class="form-control" placeholder="example@zexter.co.jp">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">お問い合わせ内容</label>
+                                    <select class="form-control">
+                                        <option>選択してください</option>
+                                        <option>害虫・害獣駆除</option>
+                                        <option>電気工事</option>
+                                        <option>清掃</option>
+                                        <option>買取・販売業</option>
+                                        <option>広告</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">メッセージ</label>
+                                    <textarea class="form-control" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                    <i class="fas fa-paper-plane"></i>
+                                    送信する
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="section bg-gray-800 text-white">
+        <div class="container text-center">
+            <h3 class="text-2xl font-bold text-gold mb-4">株式会社zexter</h3>
+            <p class="text-gray-300">Excellence Never Settles</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -140,9 +140,9 @@
         ctx.lineTo(-size * 0.7, 0);
         ctx.closePath();
         const g = ctx.createLinearGradient(-size, -size, size, size);
-        g.addColorStop(0, "rgba(232, 213, 163, 0.95)");
-        g.addColorStop(0.5, "rgba(212, 175, 55, 0.75)");
-        g.addColorStop(1, "rgba(154, 123, 60, 0.35)");
+        g.addColorStop(0, "rgba(240, 215, 140, 0.95)");
+        g.addColorStop(0.5, "rgba(224, 184, 58, 0.8)");
+        g.addColorStop(1, "rgba(138, 112, 32, 0.4)");
         ctx.fillStyle = g;
         ctx.globalAlpha = 0.35 + f.z * 0.45;
         ctx.fill();

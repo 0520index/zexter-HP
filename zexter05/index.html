@@ -1,287 +1,346 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>株式会社zexter｜白と金で拓く、多分野の現場力</title>
-  <meta name="description" content="株式会社zexter。害鳥・害虫・害獣駆除、電気工事、清掃、買い取り販売、広告など、暮らしと街の課題に応える多角事業。" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社zexter | 多分野展開の総合サービス企業</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <div class="atmosphere" aria-hidden="true"></div>
-  <div class="foil-field" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"></div>
-
-  <div class="intro" aria-hidden="true">
-    <div class="intro__mark">
-      <div class="intro__brand">ZEXTER</div>
-      <div class="intro__line"></div>
-      <p class="intro__sub">EST. NEW CHAPTER</p>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <a class="logo" href="index.html">ZEXTER<span>株式会社zexter</span></a>
-    <button class="nav-toggle" type="button" aria-label="メニュー" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav" aria-label="メインメニュー">
-      <a class="is-active" href="index.html">ホーム</a>
-      <a href="about.html">会社情報</a>
-      <a href="services.html">事業内容</a>
-      <a href="contact.html">お問い合わせ</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <section class="hero">
-      <div class="hero__plane" aria-hidden="true"></div>
-      <div class="hero__shine" aria-hidden="true"></div>
-      <div class="hero__content">
-        <h1 class="hero__brand">ZEXTER</h1>
-        <p class="hero__headline">ひとつの現場力で、<br />いくつもの暮らしを守る。</p>
-        <p class="hero__copy">法人化したばかりの株式会社zexter。駆除・電気・清掃・買い取り・広告——分野は広がっても、丁寧さは一つです。</p>
-        <div class="btn-group">
-          <a class="btn btn--solid" href="services.html">事業を見る <span class="btn__arrow" aria-hidden="true">→</span></a>
-          <a class="btn" href="contact.html">相談する</a>
+    <!-- ローディング画面 -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo-loading">ZEXTER</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Now loading...</div>
         </div>
-      </div>
-      <div class="hero__scroll" aria-hidden="true">
-        <span>SCROLL</span>
-        <div class="hero__scroll-line"></div>
-      </div>
-    </section>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>害鳥・害虫・害獣駆除</span>
-        <span>電気工事</span>
-        <span>清掃</span>
-        <span>買い取り販売</span>
-        <span>広告</span>
-        <span>害鳥・害虫・害獣駆除</span>
-        <span>電気工事</span>
-        <span>清掃</span>
-        <span>買い取り販売</span>
-        <span>広告</span>
-      </div>
     </div>
 
-    <section class="section">
-      <div class="wrap">
-        <p class="eyebrow reveal">BUSINESS ORBIT</p>
-        <h2 class="heading reveal reveal-delay-1">広がる事業を、<br />ひとつの輪で。</h2>
-        <p class="lead reveal reveal-delay-2">中心は「zexter」。周りに並ぶのは、これから増やしていく予定の各分野です。気になる分野をクリックすると詳しく読めます。</p>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-text">ZEXTER</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-        <div class="constellation reveal reveal-delay-3" aria-label="事業の軌道図">
-          <div class="constellation__ring" aria-hidden="true"></div>
-          <div class="constellation__ring constellation__ring--inner" aria-hidden="true"></div>
-          <div class="constellation__center">
-            <div>
-              <strong>ZEXTER</strong>
-              <small>多分野展開</small>
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="particle-container"></div>
+                <div class="geometric-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
             </div>
-          </div>
-          <a class="orbit-node" href="services.html#pest" style="--a:-90deg">
-            <div class="orbit-node__inner">
-              <div class="orbit-node__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5" />
-                  <path
-                    d="M20 4v4M20 32v4M4 20h4M32 20h4M8.5 8.5l2.8 2.8M28.7 28.7l2.8 2.8M8.5 31.5l2.8-2.8M28.7 11.3l2.8-2.8"
-                    stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </div>
-              <div class="orbit-node__label">駆除</div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Excellence</span>
+                    <span class="title-line">Never Settles.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    株式会社zexterは、多分野にわたる総合サービス企業として、
+                    <br>お客様の課題解決に向けて限界を超えた価値を提供します。
+                </p>
+                <div class="hero-cta">
+                    <button class="cta-button primary">サービス一覧</button>
+                    <button class="cta-button secondary">お問い合わせ</button>
+                </div>
             </div>
-          </a>
-          <a class="orbit-node" href="services.html#electric" style="--a:-18deg">
-            <div class="orbit-node__inner">
-              <div class="orbit-node__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <path d="M22 4L10 22h10l-2 14 12-18H20l2-14z" stroke="currentColor" stroke-width="1.5"
-                    stroke-linejoin="round" />
-                </svg>
-              </div>
-              <div class="orbit-node__label">電気工事</div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span class="scroll-text">Scroll Down</span>
             </div>
-          </a>
-          <a class="orbit-node" href="services.html#cleaning" style="--a:54deg">
-            <div class="orbit-node__inner">
-              <div class="orbit-node__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <path d="M8 28c4-8 8-12 12-12s8 4 12 12" stroke="currentColor" stroke-width="1.5" />
-                  <path d="M12 18c2-4 4-6 8-6s6 2 8 6" stroke="currentColor" stroke-width="1.5" />
-                  <circle cx="20" cy="10" r="2" fill="currentColor" />
-                </svg>
-              </div>
-              <div class="orbit-node__label">清掃</div>
+        </section>
+
+        <!-- サービス紹介セクション -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Services.</h2>
+                    <p class="section-subtitle">
+                        多岐にわたる事業分野で、お客様のニーズにお応えします
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="service-title">害虫・害獣駆除</h3>
+                        <p class="service-description">
+                            プロの技術で安全・確実な駆除を実施。
+                            お客様の生活環境を守ります。
+                        </p>
+                        <div class="service-hover">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="service-title">電気工事</h3>
+                        <p class="service-description">
+                            住宅・商業施設の電気工事を
+                            安全基準に準拠して施工いたします。
+                        </p>
+                        <div class="service-hover">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3 class="service-title">清掃</h3>
+                        <p class="service-description">
+                            オフィス・住宅・商業施設の
+                            プロフェッショナルクリーニング。
+                        </p>
+                        <div class="service-hover">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 class="service-title">買取・販売業</h3>
+                        <p class="service-description">
+                            不要品の適正価格での買取から
+                            販売まで幅広くサポート。
+                        </p>
+                        <div class="service-hover">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="service-title">広告</h3>
+                        <p class="service-description">
+                            効果的な広告戦略で
+                            お客様のビジネス成長を支援。
+                        </p>
+                        <div class="service-hover">
+                            <span>詳細を見る</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card coming-soon">
+                        <div class="service-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <h3 class="service-title">新サービス</h3>
+                        <p class="service-description">
+                            更なる分野への展開を予定。
+                            お客様のニーズに応えて成長します。
+                        </p>
+                        <div class="service-hover">
+                            <span>Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </a>
-          <a class="orbit-node" href="services.html#buyout" style="--a:126deg">
-            <div class="orbit-node__inner">
-              <div class="orbit-node__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <rect x="8" y="14" width="24" height="16" stroke="currentColor" stroke-width="1.5" />
-                  <path d="M14 14V12a6 6 0 0 1 12 0v2" stroke="currentColor" stroke-width="1.5" />
-                  <circle cx="20" cy="22" r="2.5" stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </div>
-              <div class="orbit-node__label">買い取り</div>
+        </section>
+
+        <!-- 会社情報セクション -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About.</h2>
+                        <p class="about-description">
+                            株式会社zexterは、お客様の多様なニーズにお応えする総合サービス企業です。
+                            害虫・害獣駆除から電気工事、清掃、買取・販売業、広告まで、
+                            幅広い分野で専門的なサービスを提供しています。
+                        </p>
+                        <p class="about-description">
+                            私たちは「Excellence Never Settles」をモットーに、
+                            常に最高品質のサービスを追求し、お客様の期待を超える価値を創造し続けます。
+                        </p>
+                        <div class="company-info">
+                            <div class="info-item">
+                                <span class="info-label">会社名</span>
+                                <span class="info-value">株式会社zexter</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">設立</span>
+                                <span class="info-value">2026年</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">事業内容</span>
+                                <span class="info-value">多分野総合サービス</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="visual-element">
+                            <div class="golden-circle"></div>
+                            <div class="floating-elements">
+                                <div class="float-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="float-item">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="float-item">
+                                    <i class="fas fa-broom"></i>
+                                </div>
+                                <div class="float-item">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <div class="float-item">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </a>
-          <a class="orbit-node" href="services.html#ad" style="--a:198deg">
-            <div class="orbit-node__inner">
-              <div class="orbit-node__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <path d="M8 26V14l14-6v24L8 26z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                  <path d="M22 16h6a4 4 0 0 1 0 8h-6" stroke="currentColor" stroke-width="1.5" />
-                </svg>
-              </div>
-              <div class="orbit-node__label">広告</div>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact.</h2>
+                    <p class="section-subtitle">
+                        サービスに関するお問い合わせは、お気軽にご連絡ください
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>お電話</h4>
+                                <p>000-0000-0000</p>
+                                <span>平日 9:00-18:00</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>メール</h4>
+                                <p>info@zexter.co.jp</p>
+                                <span>24時間受付</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>所在地</h4>
+                                <p>東京都○○区○○</p>
+                                <span>詳細はお問い合わせください</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">お名前</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">お問い合わせ内容</label>
+                                <select id="service" name="service" required>
+                                    <option value="">選択してください</option>
+                                    <option value="pest-control">害虫・害獣駆除</option>
+                                    <option value="electrical">電気工事</option>
+                                    <option value="cleaning">清掃</option>
+                                    <option value="trading">買取・販売業</option>
+                                    <option value="advertising">広告</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">メッセージ</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <span>送信する</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </a>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">ZEXTER</span>
+                    <p>Excellence Never Settles.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">害虫・害獣駆除</a></li>
+                            <li><a href="#services">電気工事</a></li>
+                            <li><a href="#services">清掃</a></li>
+                            <li><a href="#services">買取・販売業</a></li>
+                            <li><a href="#services">広告</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">会社情報</a></li>
+                            <li><a href="#contact">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 株式会社zexter. All rights reserved.</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <section class="section section--tight">
-      <div class="wrap philosophy">
-        <div class="philosophy__visual reveal" aria-hidden="true"></div>
-        <div>
-          <p class="eyebrow reveal">PHILOSOPHY</p>
-          <h2 class="heading reveal reveal-delay-1">白は余白、<br /><span class="heading--gold">金は信頼。</span></h2>
-          <div class="divider reveal reveal-delay-2"></div>
-          <p class="lead reveal reveal-delay-2" style="margin-top:0">初めてのお客様でも迷わないよう、言葉はシンプルに。仕事は誠実に。分野が増えても、この軸は変えません。
-          </p>
-          <ul class="philosophy__list">
-            <li class="reveal">
-              <span class="philosophy__num">01</span>
-              <div>
-                <strong>わかりやすさ</strong>
-                <p>専門用語をできるだけ減らし、何をしてくれる会社かがすぐ分かるサイトにしています。</p>
-              </div>
-            </li>
-            <li class="reveal reveal-delay-1">
-              <span class="philosophy__num">02</span>
-              <div>
-                <strong>現場に近い距離感</strong>
-                <p>駆除も電気も清掃も、地元の困りごとにすぐ応えることを大切にします。</p>
-              </div>
-            </li>
-            <li class="reveal reveal-delay-2">
-              <span class="philosophy__num">03</span>
-              <div>
-                <strong>これから増やしていく</strong>
-                <p>事業はこれから追加予定。更新しやすい一覧にして、成長に合わせて拡張できます。</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <p class="eyebrow reveal">AT A GLANCE</p>
-        <h2 class="heading reveal reveal-delay-1">5つの入口から、<br />相談できます。</h2>
-        <div class="service-grid">
-          <a class="service-tile reveal" href="services.html#pest">
-            <div>
-              <span class="service-tile__num">01</span>
-              <h3>駆除</h3>
-              <p>害鳥・害虫・害獣。住まいとお店の安全を守ります。</p>
-            </div>
-            <span class="service-tile__link">詳しく見る →</span>
-          </a>
-          <a class="service-tile reveal reveal-delay-1" href="services.html#electric">
-            <div>
-              <span class="service-tile__num">02</span>
-              <h3>電気工事</h3>
-              <p>配線・設備まわり。安全な電気環境をつくります。</p>
-            </div>
-            <span class="service-tile__link">詳しく見る →</span>
-          </a>
-          <a class="service-tile reveal reveal-delay-2" href="services.html#cleaning">
-            <div>
-              <span class="service-tile__num">03</span>
-              <h3>清掃</h3>
-              <p>日常〜特別清掃まで。清潔な空間を戻します。</p>
-            </div>
-            <span class="service-tile__link">詳しく見る →</span>
-          </a>
-          <a class="service-tile reveal" href="services.html#buyout">
-            <div>
-              <span class="service-tile__num">04</span>
-              <h3>買い取り販売</h3>
-              <p>モノの循環。査定から販売まで幅広く。</p>
-            </div>
-            <span class="service-tile__link">詳しく見る →</span>
-          </a>
-          <a class="service-tile reveal reveal-delay-1" href="services.html#ad">
-            <div>
-              <span class="service-tile__num">05</span>
-              <h3>広告</h3>
-              <p>伝えたいことを、届く形に整えます。</p>
-            </div>
-            <span class="service-tile__link">詳しく見る →</span>
-          </a>
-        </div>
-
-        <div class="guide reveal">
-          <h3>はじめての方へ — 3ステップ</h3>
-          <div class="guide-steps">
-            <div>
-              <strong>1. 事業を選ぶ</strong>
-              <p>「事業内容」から相談したい分野を確認します。</p>
-            </div>
-            <div>
-              <strong>2. 会社を知る</strong>
-              <p>「会社情報」で方針と概要を読めます。</p>
-            </div>
-            <div>
-              <strong>3. 連絡する</strong>
-              <p>「お問い合わせ」から内容を送ってください。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        ZEXTER
-        <p>株式会社zexter — 白と金を基調に、暮らしと街の課題へ多角的に取り組む会社です。</p>
-      </div>
-      <div class="footer-nav">
-        <h4>MENU</h4>
-        <a href="index.html">ホーム</a>
-        <a href="about.html">会社情報</a>
-        <a href="services.html">事業内容</a>
-        <a href="contact.html">お問い合わせ</a>
-      </div>
-      <div class="footer-meta">
-        <h4>CONTACT</h4>
-        <p>まずはお気軽にご相談ください。<br />詳細はお問い合わせページへ。</p>
-      </div>
-    </div>
-    <div class="footer-copy">
-      <span>© 株式会社zexter</span>
-      <span>WHITE × GOLD</span>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-  <script src="js/home.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

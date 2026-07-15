@@ -1,0 +1,462 @@
+/* =============================================================================
+   株式会社zexter - デザインシステム
+   Excellence Never Settles
+   ============================================================================= */
+
+/* CSS Custom Properties (Design Tokens) */
+:root {
+  /* =============================================================================
+     カラーパレット - 白と金をベース
+     ============================================================================= */
+  
+  /* Primary Colors - ゴールド系 */
+  --color-gold-100: #FFF8DC;      /* ライトゴールド */
+  --color-gold-200: #FFEAA7;      /* ソフトゴールド */
+  --color-gold-300: #FDCB6E;      /* ミディアムゴールド */
+  --color-gold-400: #F39C12;      /* リッチゴールド */
+  --color-gold-500: #FFD700;      /* メインゴールド */
+  --color-gold-600: #E6C200;      /* ダークゴールド */
+  --color-gold-700: #B7950B;      /* ディープゴールド */
+
+  /* Secondary Colors - ホワイト・グレー系 */
+  --color-white: #FFFFFF;
+  --color-gray-50: #FAFAFA;       /* 背景用ライトグレー */
+  --color-gray-100: #F5F6FA;      /* セクション背景 */
+  --color-gray-200: #E8E9ED;      /* ボーダー用 */
+  --color-gray-300: #DDD6FE;      /* ソフトアクセント */
+  --color-gray-400: #9CA3AF;      /* サブテキスト */
+  --color-gray-500: #6B7280;      /* 通常テキスト */
+  --color-gray-600: #4B5563;      /* ダークテキスト */
+  --color-gray-700: #374151;      /* 見出し用 */
+  --color-gray-800: #1F2937;      /* 強調テキスト */
+  --color-gray-900: #111827;      /* 最暗テキスト */
+
+  /* Accent Colors */
+  --color-accent-blue: #3498DB;   /* アクセントブルー */
+  --color-accent-green: #27AE60;  /* 成功色 */
+  --color-accent-red: #E74C3C;    /* エラー色 */
+
+  /* =============================================================================
+     タイポグラフィシステム
+     ============================================================================= */
+  
+  /* Font Families */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Font Sizes - Fluid Typography */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);    /* 12-14px */
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);      /* 14-16px */
+  --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);      /* 16-18px */
+  --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);     /* 18-20px */
+  --font-size-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);      /* 20-24px */
+  --font-size-2xl: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);       /* 24-30px */
+  --font-size-3xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);  /* 30-36px */
+  --font-size-4xl: clamp(2.25rem, 1.9rem + 1.75vw, 3rem);       /* 36-48px */
+  --font-size-5xl: clamp(3rem, 2.5rem + 2.5vw, 4rem);           /* 48-64px */
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.8;
+
+  /* =============================================================================
+     スペーシングシステム
+     ============================================================================= */
+  
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* Container Sizes */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1400px;
+
+  /* =============================================================================
+     シャドウシステム
+     ============================================================================= */
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-gold: 0 10px 30px rgba(255, 215, 0, 0.2);
+  --shadow-gold-lg: 0 20px 40px rgba(255, 215, 0, 0.3);
+
+  /* =============================================================================
+     ボーダーラディウス
+     ============================================================================= */
+  
+  --radius-sm: 0.125rem;    /* 2px */
+  --radius-base: 0.25rem;   /* 4px */
+  --radius-md: 0.375rem;    /* 6px */
+  --radius-lg: 0.5rem;      /* 8px */
+  --radius-xl: 0.75rem;     /* 12px */
+  --radius-2xl: 1rem;       /* 16px */
+  --radius-3xl: 1.5rem;     /* 24px */
+  --radius-full: 9999px;
+
+  /* =============================================================================
+     トランジション
+     ============================================================================= */
+  
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  --transition-bounce: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* =============================================================================
+     Z-Index Scale
+     ============================================================================= */
+  
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* =============================================================================
+   リセット & ベーススタイル
+   ============================================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-gray-700);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+/* =============================================================================
+   タイポグラフィ
+   ============================================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-gray-800);
+  margin-bottom: var(--space-4);
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-black);
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+}
+
+h4 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+h6 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+p {
+  margin-bottom: var(--space-4);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+a {
+  color: var(--color-gold-500);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-gold-600);
+}
+
+/* =============================================================================
+   レイアウト
+   ============================================================================= */
+
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.container-sm { max-width: var(--container-sm); }
+.container-md { max-width: var(--container-md); }
+.container-lg { max-width: var(--container-lg); }
+.container-xl { max-width: var(--container-xl); }
+.container-2xl { max-width: var(--container-2xl); }
+
+.section {
+  padding: var(--space-20) 0;
+}
+
+.section-sm {
+  padding: var(--space-16) 0;
+}
+
+.section-lg {
+  padding: var(--space-32) 0;
+}
+
+/* =============================================================================
+   グリッドシステム
+   ============================================================================= */
+
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+
+.col-span-1 { grid-column: span 1; }
+.col-span-2 { grid-column: span 2; }
+.col-span-3 { grid-column: span 3; }
+.col-span-4 { grid-column: span 4; }
+.col-span-6 { grid-column: span 6; }
+.col-span-12 { grid-column: span 12; }
+
+/* =============================================================================
+   Flexboxユーティリティ
+   ============================================================================= */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+
+/* =============================================================================
+   テキストユーティリティ
+   ============================================================================= */
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+.text-4xl { font-size: var(--font-size-4xl); }
+.text-5xl { font-size: var(--font-size-5xl); }
+
+.font-light { font-weight: var(--font-weight-light); }
+.font-normal { font-weight: var(--font-weight-regular); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+.font-black { font-weight: var(--font-weight-black); }
+
+.text-gold { color: var(--color-gold-500); }
+.text-gold-light { color: var(--color-gold-300); }
+.text-gold-dark { color: var(--color-gold-600); }
+.text-gray { color: var(--color-gray-600); }
+.text-gray-dark { color: var(--color-gray-700); }
+.text-white { color: var(--color-white); }
+
+/* =============================================================================
+   背景ユーティリティ
+   ============================================================================= */
+
+.bg-white { background-color: var(--color-white); }
+.bg-gray-50 { background-color: var(--color-gray-50); }
+.bg-gray-100 { background-color: var(--color-gray-100); }
+.bg-gold { background-color: var(--color-gold-500); }
+.bg-gold-light { background-color: var(--color-gold-100); }
+
+/* グラデーション */
+.bg-gradient-gold {
+  background: linear-gradient(135deg, var(--color-gold-400) 0%, var(--color-gold-600) 100%);
+}
+
+.bg-gradient-white-gold {
+  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gold-100) 100%);
+}
+
+/* =============================================================================
+   スペーシングユーティリティ
+   ============================================================================= */
+
+.m-0 { margin: 0; }
+.m-1 { margin: var(--space-1); }
+.m-2 { margin: var(--space-2); }
+.m-3 { margin: var(--space-3); }
+.m-4 { margin: var(--space-4); }
+.m-6 { margin: var(--space-6); }
+.m-8 { margin: var(--space-8); }
+
+.mt-0 { margin-top: 0; }
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+.mt-12 { margin-top: var(--space-12); }
+.mt-16 { margin-top: var(--space-16); }
+
+.mb-0 { margin-bottom: 0; }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-8 { margin-bottom: var(--space-8); }
+.mb-12 { margin-bottom: var(--space-12); }
+.mb-16 { margin-bottom: var(--space-16); }
+
+.p-0 { padding: 0; }
+.p-4 { padding: var(--space-4); }
+.p-6 { padding: var(--space-6); }
+.p-8 { padding: var(--space-8); }
+
+.pt-4 { padding-top: var(--space-4); }
+.pt-6 { padding-top: var(--space-6); }
+.pt-8 { padding-top: var(--space-8); }
+.pt-16 { padding-top: var(--space-16); }
+
+.pb-4 { padding-bottom: var(--space-4); }
+.pb-6 { padding-bottom: var(--space-6); }
+.pb-8 { padding-bottom: var(--space-8); }
+.pb-16 { padding-bottom: var(--space-16); }
+
+/* =============================================================================
+   レスポンシブブレークポイント
+   ============================================================================= */
+
+@media (max-width: 639px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .sm\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .md\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .lg\:grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+}
