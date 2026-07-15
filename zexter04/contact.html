@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 株式会社zexter</title>
+  <meta name="description" content="株式会社zexterへのお問い合わせ。駆除・電気・清掃・買い取り・広告のご相談はこちら。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <div class="bg-stage" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true"></span>
+        ZEXTER
+      </a>
+      <button class="menu-toggle" type="button" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="index.html" data-nav="home">ホーム</a>
+        <a href="about.html" data-nav="about">会社情報</a>
+        <a href="services.html" data-nav="services">事業内容</a>
+        <a href="contact.html" data-nav="contact" class="nav-cta">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>お問い合わせ</h1>
+        <p>ご依頼・お見積り・ご質問など、まずはフォームまたはメールでご連絡ください。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <aside class="contact-card hud-frame reveal">
+          <span class="hud-corner-tr" aria-hidden="true"></span>
+          <span class="hud-corner-bl" aria-hidden="true"></span>
+          <h2>ご連絡について</h2>
+          <p>
+            内容確認後、折り返しご連絡します。
+            緊急案件の場合は、その旨をメッセージに書いてください。
+          </p>
+          <ul>
+            <li><strong>メール</strong><span>info@zexter.example（差し替え可）</span></li>
+            <li><strong>対応</strong><span>平日を中心に順次返信</span></li>
+            <li><strong>相談</strong><span>個人・法人どちらも歓迎</span></li>
+          </ul>
+          <p style="margin-top: 24px; font-size: 0.9rem;">
+            ※メールアドレス・電話番号・住所などは、実際の情報に書き換えてご利用ください。
+          </p>
+        </aside>
+
+        <div class="contact-card reveal reveal-delay-1">
+          <h2>お問い合わせフォーム</h2>
+          <p style="margin-bottom: 20px; color: var(--ink-soft); font-size: 0.95rem;">
+            必須項目を入力して送信してください（現時点では画面上の完了表示のみです）。
+          </p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">お名前 <span style="color: var(--gold-deep);">*</span></label>
+              <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">メールアドレス <span style="color: var(--gold-deep);">*</span></label>
+              <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">電話番号（任意）</label>
+              <input type="tel" id="phone" name="phone" placeholder="090-0000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="topic">ご相談内容の種類</label>
+              <select id="topic" name="topic">
+                <option value="pest">害鳥・害虫・害獣駆除</option>
+                <option value="electric">電気工事</option>
+                <option value="cleaning">清掃</option>
+                <option value="trade">買い取り販売</option>
+                <option value="ad">広告</option>
+                <option value="other">その他・複合</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">お問い合わせ内容 <span style="color: var(--gold-deep);">*</span></label>
+              <textarea id="message" name="message" placeholder="ご希望の日時や現場の状況など、わかる範囲でご記入ください。" required></textarea>
+            </div>
+
+            <button class="btn btn--gold" type="submit">
+              送信する <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-note">
+              本番公開時は、Formspree・Googleフォーム・メール送信サービスなどと連携すると便利です。
+            </p>
+            <div id="form-success" class="form-success" role="status">
+              送信内容を受け付けました（デモ表示）。本番ではここに実送信処理を接続します。
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true"></span>
+            ZEXTER
+          </a>
+          <p>株式会社zexter — 暮らしとビジネスを支える多角事業チーム。</p>
+        </div>
+        <div class="footer-nav">
+          <div>
+            <h3>Menu</h3>
+            <a href="index.html">ホーム</a>
+            <a href="about.html">会社情報</a>
+            <a href="services.html">事業内容</a>
+            <a href="contact.html">お問い合わせ</a>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <a href="mailto:info@zexter.example">info@zexter.example</a>
+            <a href="contact.html">フォームから問い合わせ</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 株式会社zexter</p>
+        <p>White × Gold — Built for next moves.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
